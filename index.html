@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="fonts/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>JS-2</title>
+       
+    </head>
+
+    <body>
+      <!--id selectors-->
+      <div class="text">This is an example of class selectors</div>
+       <button class="btn">Click to fadeOut!</button>  
+       <button class="btn1">DoubleClick to fadeOut!</button> 
+       <button class="btn2">DoubleClick to fadeIn!</button>  
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+
+              $(document).ready(function(){
+          $(".btn").click(function(){
+            $(".text").fadeOut(2000);
+          });
+          $(".btn1").dblclick(function(){
+            $(".text").fadeOut(2000);
+          });
+          $(".btn2").dblclick(function(){
+            $(".text").fadeIn(2000);
+          });
+
+
+        });
+</script> 
+    </body>
+</html>
+
